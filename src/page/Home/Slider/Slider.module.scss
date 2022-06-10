@@ -1,0 +1,50 @@
+.wrapper {
+    width: 100%;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    height: 600px;
+}
+.item-backgroud {
+    position: absolute;
+    inset: 0;
+    &-img {
+        width: 100%;
+    }
+}
+
+.introduce {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-100%, -50%);
+    transform: translate(-83%, -15%);
+    .label {
+        color: var(--white-color);
+        font-size: 3.3rem;
+        text-transform: uppercase;
+    }
+    .title {
+        color: var(--white-color);
+        font-size: 6.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .desc {
+        color: var(--white-color);
+        display: block;
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+    .btn-group {
+        margin-top: 20px;
+        display: flex;
+        .btn {
+            padding: 10px;
+        }
+    }
+}

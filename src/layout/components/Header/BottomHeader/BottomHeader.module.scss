@@ -1,3 +1,27 @@
-.wrapper{
-    color:#000;
+$text-color: var(--white-color);
+.wrapper {
+    height: 70px;
+    background-color: var(--black-color);
+    color: $text-color;
+}
+.inner {
+    width: 100%;
+    height: 100%;
+    max-width: var(--default-layout-width);
+    margin: auto;
+    display: flex;
+    line-height: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img {
+    height: 100px;
+    width: auto;
+}
+.category {
+    display: flex;
+    &-item {
+        color: var(--white-color);
+        padding: 5px 10px;
+    }
 }

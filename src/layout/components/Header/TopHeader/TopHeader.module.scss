@@ -1,9 +1,59 @@
+$bgcolor: #34363c;
+$text-color: #dadada;
+
 .wrapper {
-    background-color: #34363c;
+    background-color: $bgcolor;
+    // background-color: $myBlue;
     width: 100%;
     height: 30px;
-    color: #90908b;
+    color: $text-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 1.2rem;
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+.inner {
+    max-width: var(--default-layout-width);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-list {
+    display: flex;
+    align-items: center;
+    .logo-item {
+        padding: 5px 5px 5px 0;
+    }
+    .logo-img {
+        width: 60px;
+        height: auto;
+    }
+    .fix-img {
+        width: 25px;
+    }
+}
+
+.menu {
+    height: 100%;
+
+    .menu-list {
+        display: flex;
+        height: 100%;
+    }
+    .menu-item {
+    }
+    .item-link {
+        padding: 5px 10px;
+        display: block;
+        color: $text-color;
+
+        text-decoration: none;
+    }
 }
